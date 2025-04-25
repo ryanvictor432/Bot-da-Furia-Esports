@@ -66,7 +66,7 @@ async def botao_clicado(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Função principal
 if __name__ == '__main__':
-    app = ApplicationBuilder().token("7960724437:AAEImZcKC3xYjOUg6qxwqOwsBOzsAwpwxf0").build()
+    app = ApplicationBuilder().token("INSIRA SEU TOKEN AQUI").build()
 
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, responder_usuario))
     app.add_handler(CallbackQueryHandler(botao_clicado))
